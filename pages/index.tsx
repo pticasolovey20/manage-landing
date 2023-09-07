@@ -1,7 +1,7 @@
 const Home = () => {
 	return (
 		<section>
-			<span>HELLO WORLD</span>
+			<span>DEV BRANCH</span>
 		</section>
 	);
 };
