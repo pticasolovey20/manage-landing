@@ -15,7 +15,7 @@ const Header: FC = (): JSX.Element => {
 		<header
 			className={classNames(
 				"w-full md:w-[90%] xl:w-[80%]",
-				"flex flex-col gap-4",
+				"flex flex-col gap-4 z-10",
 				"px-6 py-10 sm:py-4 md:py-6 lg:py-10"
 			)}
 		>
@@ -30,7 +30,7 @@ const Header: FC = (): JSX.Element => {
 					<Logo />
 				</div>
 				<Navigation />
-				<Button label="Get Started" styles="hidden md:flex" />
+				<Button shadow label="Get Started" styles="hidden md:flex" />
 
 				<button className="flex sm:hidden z-20" onClick={() => setOpen(!open)}>
 					{open ? <CloseIcon /> : <MenuIcon />}
