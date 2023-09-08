@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { NAVIGATION } from "@/pages/constants";
+import { NAVIGATION } from "@/constants";
 import { classNames } from "@/utils";
 
 import Link from "next/link";
