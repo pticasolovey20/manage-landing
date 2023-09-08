@@ -9,9 +9,9 @@ interface ILayoutProps {
 
 const Layout: FC<ILayoutProps> = ({ children }: ILayoutProps): JSX.Element => {
 	return (
-		<div className="w-full min-h-screen flex flex-col">
+		<div className="min-h-screen flex flex-col items-center">
 			<Header />
-			<main className="flex-1 flex items-center">{children}</main>
+			<main className="w-full md:w-[90%] xl:w-[80%] h-full flex-1">{children}</main>
 			<Footer />
 		</div>
 	);
