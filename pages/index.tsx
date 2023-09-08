@@ -1,8 +1,12 @@
-const Home = () => {
+import React, { FC } from "react";
+import Layout from "./components/layout";
+import IntroSection from "./components/intro";
+
+const Home: FC = (): JSX.Element => {
 	return (
-		<section>
-			<span>HELLO WORLD</span>
-		</section>
+		<Layout>
+			<IntroSection />
+		</Layout>
 	);
 };
 
