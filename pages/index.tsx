@@ -1,8 +1,10 @@
+import Layout from "./components/layout";
+
 const Home = () => {
 	return (
-		<section>
-			<span>DEV BRANCH</span>
-		</section>
+		<Layout>
+			<section>MAIN</section>
+		</Layout>
 	);
 };
 
