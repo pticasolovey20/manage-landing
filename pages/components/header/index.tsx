@@ -30,15 +30,9 @@ const Header: FC = (): JSX.Element => {
 				<Navigation />
 				<Button label="Get Started" styles="hidden md:flex" />
 
-				{open ? (
-					<button className="flex sm:hidden" onClick={() => setOpen(!open)}>
-						<CloseIcon />
-					</button>
-				) : (
-					<button className="flex sm:hidden" onClick={() => setOpen(!open)}>
-						<MenuIcon />
-					</button>
-				)}
+				<button className="flex sm:hidden" onClick={() => setOpen(!open)}>
+					{open ? <CloseIcon /> : <MenuIcon />}
+				</button>
 			</div>
 
 			{open && <Navigation styles="!flex sm:!hidden" />}
