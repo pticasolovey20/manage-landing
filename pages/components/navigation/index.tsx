@@ -20,7 +20,7 @@ const Navigation: FC<INavigationProps> = ({ styles }: INavigationProps): JSX.Ele
 				styles
 			)}
 		>
-			<ul className={classNames("flex flex-col sm:flex-row", "items-center gap-4 md:gap-2", "p-4 lg:p-4")}>
+			<ul className={classNames("flex flex-col sm:flex-row", "items-center gap-4 md:gap-2", "py-8")}>
 				{NAVIGATION.map((item, index) => (
 					<li key={index}>
 						<Link

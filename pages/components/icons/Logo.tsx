@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 const Logo: FC = (): JSX.Element => {
 	return (
-		<svg className="flex sm:hidden lg:flex" xmlns="http://www.w3.org/2000/svg" width="146" height="25">
+		<svg xmlns="http://www.w3.org/2000/svg" width="146" height="25">
 			<g fill="none" fillRule="evenodd">
 				<path
 					fill="#242D52"

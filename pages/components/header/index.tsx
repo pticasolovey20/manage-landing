@@ -15,7 +15,7 @@ const Header: FC = (): JSX.Element => {
 		<header
 			className={classNames(
 				"w-full md:w-[90%] xl:w-[80%]",
-				"relative flex flex-col gap-4",
+				"flex flex-col gap-4",
 				"px-6 py-10 sm:py-4 md:py-6 lg:py-10"
 			)}
 		>
@@ -26,16 +26,23 @@ const Header: FC = (): JSX.Element => {
 					"sm:justify-center md:justify-between"
 				)}
 			>
-				<Logo />
+				<div className="flex sm:hidden lg:flex">
+					<Logo />
+				</div>
 				<Navigation />
 				<Button label="Get Started" styles="hidden md:flex" />
 
-				<button className="flex sm:hidden" onClick={() => setOpen(!open)}>
+				<button className="flex sm:hidden z-20" onClick={() => setOpen(!open)}>
 					{open ? <CloseIcon /> : <MenuIcon />}
 				</button>
 			</div>
 
-			{open && <Navigation styles="!flex sm:!hidden" />}
+			{open && (
+				<div className="absolute left-0 top-24 w-full px-6 z-10">
+					<div className="fixed inset-0 bg-neutral-very-dark-blue opacity-10 -z-10"></div>
+					<Navigation styles="!flex sm:!hidden" />
+				</div>
+			)}
 		</header>
 	);
 };

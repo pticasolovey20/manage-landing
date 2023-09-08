@@ -3,7 +3,7 @@ import Layout from "./components/layout";
 const Home = () => {
 	return (
 		<Layout>
-			<section className="flex"></section>
+			<section></section>
 		</Layout>
 	);
 };
